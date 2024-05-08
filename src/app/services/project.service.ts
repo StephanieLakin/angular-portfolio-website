@@ -40,9 +40,9 @@ export class ProjectService {
       id: 2,
       name: 'Paws Connect API',
       pictures: [
-        '../assets/img/img_01.png',
-        '../assets/img/img_02.png',
-        '../assets/img/img_03.png',
+        '../assets/img/pawsApi_01.png',
+        '../assets/img/pawsApi_02.png',
+        // '../assets/img/img_03.png',
       ],
       projectLink: 'https://github.com/StephanieLakin/PawsConnect/tree/master/PawsConnect',
       summary: 'Fullstack web app developed using Angular and .NET Core Web API',

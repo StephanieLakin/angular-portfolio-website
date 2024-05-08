@@ -45,7 +45,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     AccordionModule.forRoot(),
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [ContactService, ProjectService],
   bootstrap: [AppComponent]
