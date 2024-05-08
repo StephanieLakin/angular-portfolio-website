@@ -48,7 +48,7 @@ export class ProjectService {
       summary: 'Fullstack web app developed using Angular and .NET Core Web API',
       description:
         'Building an API for a Dog Care and Community App that provides a comprehensive platform for dog owners to track health records, connect with other owners, and access pet services. A work in progress.',
-      tags: [Tag.DOTNETCORE, Tag.CSHARP, Tag.ASPNET],
+      tags: [Tag.DOTNETCORE, Tag.CSHARP],
     },
     {
       id: 3,
