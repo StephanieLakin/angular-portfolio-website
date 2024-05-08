@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+html, body{
+   scroll-behavior: smooth;
+}
+
+article{
+    scroll-margin-top: 2rem;
+    padding: 2rem 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    /* background-color: #f1f1f1; */
+}
+
+
+.container{
+    max-width: 1140px;  
+    /* color: #fff;    */
+    
+    
+}
+.tag{
+    padding: 0 20px;
+    height: 30px;
+    width: fit-content;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 25px;   
+    color: white;
+}
+
+ /* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */

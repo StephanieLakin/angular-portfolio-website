@@ -1,0 +1,26 @@
+.btn {
+  color: #000;
+  border: #000 2px solid !important;
+  margin-right: 10px;
+  font-weight:600;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer !important;
+  opacity: 0.8;
+  background-color: dimgray;
+  color: #fff;
+}
+
+.form-check-input:checked {
+  background-color: dimgray;
+}
+
+.form-check-label{
+    color: #000;
+}
+
+b {
+  color: dimgray;
+}

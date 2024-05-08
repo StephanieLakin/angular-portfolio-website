@@ -1,0 +1,15 @@
+.nav-link.active {
+    color: #000 !important;
+    cursor:pointer !important;
+    font-weight:bolder;  
+}
+
+.nav-link {
+    color: #000 !important;
+    cursor:pointer !important;
+    font-weight: bold;
+}
+
+ .nav-link:hover{
+    opacity: 0.60;
+}

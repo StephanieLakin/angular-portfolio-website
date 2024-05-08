@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="my-4 ">
+    <div>
+      <button
+        class="btn btn-outline-primary mb-2"
+        (click)="isCollapsed = !isCollapsed"
+        style="margin-left: 34px;"
+        title="Filter Projects"
+      >
+        Filter
+      </button>
+      <button
+          class="btn btn-outline-secondary mb-2 me-2"
+          (click)="resetFilters()"
+          [hidden]="!filtering"
+        >
+          Reset
+        </button>
+    </div> 
+    <div [collapse]="isCollapsed" [isAnimated]="true">
+      <div class="border mb-2 shadow-sm" style="width: 250px; margin-left: 34px;">     
+        <form>
+          <div class="row mx-0">
+            <!-- Frameworks Column -->
+            <div class="col">
+              <small><b>Frameworks:</b></small>
+              <div class="form-group">
+                <div class="form-check" *ngFor="let tag of frameworkTags">
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="tag.selected"
+                    (change)="filterProjects()"
+                    [name]="tag.name"
+                  />
+                  <label for="" class="form-check-label small">{{
+                    tag.name
+                  }}</label>
+                </div>
+              </div>
+            </div>
+            <!-- Languages Column -->
+            <div class="col">
+              <small><b>Languages:</b></small>
+              <div class="form-group">
+                <div class="form-check" *ngFor="let tag of languageTags">
+                  <input
+                    type="checkbox"
+                    class="form-check-input position-static me-2"
+                    [(ngModel)]="tag.selected"
+                    (change)="filterProjects()"
+                    [name]="tag.name"
+                  />
+                  <label for="" class="form-check-label small">{{
+                    tag.name
+                  }}</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div
+      *ngFor="let project of projects"
+      class="col-lg-4 col-md-6 mb-4"
+      style="max-width: 380px; min-width: 380px"
+    >
+      <app-project-card [project]="project"></app-project-card>
+    </div>
+  </div>
+</div>

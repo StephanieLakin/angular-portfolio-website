@@ -1,0 +1,9 @@
+.jumbotron{
+    position: relative;
+    color: #fff;
+    padding: 20px; 
+}
+
+a:hover{
+    opacity: 0.60;
+}

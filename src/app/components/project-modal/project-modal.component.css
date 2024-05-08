@@ -1,0 +1,13 @@
+span > .carousel-control-prev-icon,
+ span > .carousel-control-next-icon {
+    color: dimgray !important; 
+}
+a:hover{
+    opacity: 0.80;
+    cursor:pointer !important;
+}
+
+img {
+    border: 3px solid #000;
+    border-radius: 5px;
+  }

@@ -1,0 +1,59 @@
+ <div class="container mt-5 pt-5" style="position: relative">
+  <div id="contact" class="text-center border mb-5 shadow rounded">
+    <h1 style="color: #000; font-weight: bold; text-align: left; margin-left: 7em;">Contact</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">         
+          <form [formGroup]="formData" (ngSubmit)="onFormSubmit()">
+            <div class="form-group text-start mb-4">
+              <label for="fullname">Name</label>
+              <input type="text" class="form-control mb-4" name="user_name" placeholder="Name" formControlName="user_name">
+              <!-- Error message for required validation -->
+    <div *ngIf="formData.get('user_name')?.invalid && (formData.get('user_name')?.dirty || formData.get('user_name')?.touched)"
+    class="text-danger">Name is required</div>
+            </div>
+            <div class="form-group text-start mb-4">
+              <label for="Email">Email</label>
+              <input type="email" class="form-control" name="user_email" aria-describedby="emailHelp" placeholder="Enter email" formControlName="user_email">
+              <!-- Error message for required validation -->
+    <div *ngIf="formData.get('user_email')?.invalid && (formData.get('user_email')?.dirty || formData.get('user_email')?.touched)"
+    class="text-danger">Name is required</div>
+            </div>
+            <div class="form-group mb-4 text-start">
+              <label for="comment">Message</label>
+              <textarea class="form-control" formControlName="message" name="message"></textarea>
+            </div>
+            <div class="text-start mb-4">
+              <button type="submit" class="btn btn-outline" [disabled]="!formData.valid" style="font-weight:bold">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="position: absolute; bottom: 20px; right:50%">
+  <a href="https://www.linkedin.com/in/stephaniejlakin" target="_blank">
+    <img
+      src="../assets/img/linkedLogo.png"
+      width="30"
+      height="30"
+      alt="linkedin logo"
+      class="rounded-circle mx-2"
+      title="Linkedin"
+    />
+  </a>
+  <a
+    href="https://github.com/StephanieLakin?tab=repositories"
+    target="_blank"
+  >
+    <img
+      src="../assets/img/github.png"
+      width="30"
+      height="30"
+      alt="github logo"
+      class="rounded-circle mx-2"
+      title="GitHub"
+    />
+  </a>
+</div>

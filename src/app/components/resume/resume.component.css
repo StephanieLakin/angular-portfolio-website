@@ -1,0 +1,42 @@
+
+#dwnld {
+    background-color: #222629 !important;
+    color: white; 
+    border: #000 1px solid !important;
+}
+
+#dwnld:hover {   
+    cursor:pointer !important;
+    color: #fff; 
+    border: #000 2px solid !important;
+    background-color: dimgray !important;
+}
+
+.btn.btn-outline {   
+    background-color:#fff !important;
+    color: #000; 
+    border: #000 2px solid !important;
+}
+
+.btn.btn-outline:hover {   
+    background-color:#fff !important;
+    color: #fff; 
+    border: #000 2px solid !important;
+    background-color: dimgray !important;
+}
+
+.btn {
+    color: #000;
+    border: #000 4px solid !important;
+    margin-right: 10px;
+    font-weight:600;
+  }
+  
+.row.justify-content-between > div {
+    margin-right: 10px; 
+  }
+  
+  hr{
+    border: 1.5px solid #000;
+    opacity: 100;
+  }
