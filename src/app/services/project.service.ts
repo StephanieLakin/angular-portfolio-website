@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Project } from '../models/project.model';
 import { Tag } from '../models/tag.model';
 
+
 @Injectable({
   providedIn: 'root',
 })
@@ -11,13 +12,12 @@ export class ProjectService {
       id: 0,
       name: 'Inspection Task Web',
       pictures: [
-        "../assets/img/InspectionTaskUi_01.PNG",
-        "../assets/img/InspectionTaskUi_02.PNG",
+        '../assets/img/InspectionTaskUi_01.PNG',
+        '../assets/img/InspectionTaskUi_02.PNG',
         // '../assets/img/img_03.png',
       ],
       projectLink: 'https://github.com/StephanieLakin/InspectionTaskWeb',
-      summary:
-        'Angular front end for Inspection Task APi',
+      summary: 'Angular front end for Inspection Task APi',
       description:
         'On the Angular UI, users can view a list of inspections, each formatted in a clear and organized manner. For each inspection listed, there is a button that, when clicked, triggers the API endpoint to copy the inspection data. After the API call is made, a toast notification appears on the UI, informing the user whether the operation was successful or not. Overall, this app simplifies the process of managing inspections by providing a seamless user experience and ensuring that data is accurately stored and processed in the backend.',
       tags: [Tag.ANGULAR, Tag.TYPESCRIPT],
@@ -26,8 +26,8 @@ export class ProjectService {
       id: 1,
       name: 'Inspection Task API',
       pictures: [
-        "../assets/img/InspTaskApi_02.png",
-        "../assets/img/swaggerInspApp.PNG",
+        '../assets/img/InspTaskApi_02.png',
+        '../assets/img/swaggerInspApp.PNG',
         '../assets/img/DbQuery.PNG',
       ],
       projectLink: 'https://github.com/StephanieLakin/InspectionTaskApi',
@@ -40,12 +40,14 @@ export class ProjectService {
       id: 2,
       name: 'Paws Connect API',
       pictures: [
-        '../assets/img/pawsApi_01.png',
-        '../assets/img/pawsApi_02.png',
+        'assets/img/pawsApi_01.png',
+        'assets/img/pawsApi_02.png',
         // '../assets/img/img_03.png',
       ],
-      projectLink: 'https://github.com/StephanieLakin/PawsConnect/tree/master/PawsConnect',
-      summary: 'Fullstack web app developed using Angular and .NET Core Web API',
+      projectLink:
+        'https://github.com/StephanieLakin/PawsConnect/tree/master/PawsConnect',
+      summary:
+        'Fullstack web app developed using Angular and .NET Core Web API',
       description:
         'Building an API for a Dog Care and Community App that provides a comprehensive platform for dog owners to track health records, connect with other owners, and access pet services. A work in progress.',
       tags: [Tag.DOTNETCORE, Tag.CSHARP],
@@ -59,9 +61,38 @@ export class ProjectService {
         '../assets/img/img_03.png',
       ],
       projectLink: 'https://github.com/StephanieLakin/PawsConnectWeb',
-      summary: 'Fullstack web app developed using Angular and .NET Core Web API.',
+      summary:
+        'Fullstack web app developed using Angular and .NET Core Web API.',
       description:
         'Building an Angular front end for a Dog Care and Community App that provides a comprehensive platform for dog owners to track health records, connect with other owners, and access pet services. A work in progress.',
+      tags: [Tag.ANGULAR, Tag.TYPESCRIPT],
+    },
+    {
+      id: 4,
+      name: 'Dev Study App',
+      pictures: [
+        '../assets/img/yuki-dev-landing.png',
+        '../assets/img/yuki-dev-cards.png',
+        '../assets/img/yuki-dev-code.png',
+      ],
+      projectLink: 'https://github.com/StephanieLakin/dev-study-app',
+      summary: 'Angular-based application featuring interactive flashcards',
+      description:
+        '\nTopic-Specific Flashcards: Users can select specific study topics to focus on, with each topic having its own set of flashcards stored in separate JSON files for easy management and scalability.\n\nInteractive Navigation: Users can easily navigate through flashcards using previous and next buttons, ensuring a seamless learning experience.\n\nDynamic Data Loading: The application dynamically loads flashcards from JSON files using Angular HttpClient, enabling efficient handling of a large number of questions.\n\nResponsive Design: Built with Angular and styled using PrimeNg, DevStudy offers a clean and responsive user interface suitable for both desktop and mobile devices.',
+      tags: [Tag.ANGULAR, Tag.TYPESCRIPT],
+    },
+    {
+      id: 5,
+      name: 'Gallery App',
+      pictures: [
+        '../assets/img/gallery_01.png',
+        '../assets/img/gallery_02.png',
+        '../assets/img/gallery_04.png',
+      ],
+      projectLink: 'https://github.com/StephanieLakin/GalleryApp',
+      summary: 'Angular Project for viewing my art.',
+      description:
+        'My very first angular project built several years back. It was created more for learning about filtering than it was for diplaying my art.',
       tags: [Tag.ANGULAR, Tag.TYPESCRIPT],
     },
     // {
@@ -79,21 +110,6 @@ export class ProjectService {
     //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     //   tags: [Tag.JAVASCRIPT],
     // },
-    {
-      id: 5,
-      name: 'Gallery App',
-      pictures: [
-        '../assets/img/gallery_01.png',
-        '../assets/img/gallery_02.png',
-        '../assets/img/gallery_04.png',
-      ],
-      projectLink: 'https://github.com/StephanieLakin/GalleryApp',
-      summary:
-        'Angular Project for viewing my art.',
-      description:
-        'My very first angular project built several years back. It was created more for learning about filtering than it was for diplaying my art.',
-      tags: [Tag.ANGULAR, Tag.TYPESCRIPT],
-    },
   ];
   constructor() {}
 
